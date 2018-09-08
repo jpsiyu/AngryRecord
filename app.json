@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/angry/angry",
+    "pages/history/history",
+    "pages/tips/tips"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "有脾气",
+    "navigationBarTextStyle":"black"
+  }
+}

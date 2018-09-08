@@ -1,0 +1,44 @@
+<view class='container'>
+  <div class="title-container">
+    <view class='title-bg'>
+      <view>
+        <text class='title'>今日愤怒次数:</text>
+      </view>
+      <view>
+        <text class='count'>{{angryCount}}</text>
+      </view>
+    </view>
+  </div>
+  <view class='progress-container'>
+    <view class='progress-list'>
+      <progress percent='{{percent0}}' stroke-width='15' activeColor='{{progressColor0}}' />
+      <progress percent='{{percent1}}' stroke-width='15' activeColor='{{progressColor1}}' />
+      <progress percent='{{percent2}}' stroke-width='15' activeColor='{{progressColor2}}' />
+      <progress percent='{{percent3}}' stroke-width='15' activeColor='{{progressColor3}}' />
+    </view>
+    <view class='progress-desc'>
+      <text>平静</text>
+      <text>小怒</text>
+      <text>怒了</text>
+      <text>怒飞</text>
+    </view>
+  </view>
+  <div class="btn-container">
+    <button bindtouchstart='touchStart' bindtouchend='touchEnd' bindtouchcancel='touchEnd' size='default'>
+      <text>怒</text>
+    </button>
+  </div>
+  <view class='history'>
+    <navigator url='../history/history'>
+      <text>历史记录</text>
+    </navigator>
+    <text class='split'>|</text>
+    <navigator url='../tips/tips'>
+      <text>锦囊妙计</text>
+    </navigator>
+  </view>
+  <div wx:if="{{touching}}" class="fire-container">
+    <image src="/images/fire.gif" />
+    <image src="/images/fire.gif" />
+  </div>
+</view>

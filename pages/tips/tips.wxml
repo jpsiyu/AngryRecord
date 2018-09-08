@@ -1,0 +1,13 @@
+<!--pages/tips/tips.wxml-->
+
+<view class='container'>
+  <view class='choice'>
+    <text>{{choice}}</text>
+  </view>
+  
+    <button class='btn' bindtap='updateView' size='default'>
+      <text>换</text>
+    </button>
+
+</view>
+

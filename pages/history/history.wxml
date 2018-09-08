@@ -1,0 +1,13 @@
+<!--pages/history/history.wxml-->
+<view class='container'>
+  <view class='chartDesc'>{{chartDesc}}</view>
+  <canvas 
+    canvas-id='lineCanvas' 
+    disable-scroll='true' 
+    class='canvas' 
+    bindtouchstart='touchHandler' 
+    bindtouchmove='moveHandler' 
+    bindtouchend='touchEndHandler'>
+  </canvas>
+  <canvas canvas-id="pieCanvas" class="canvas" style="height:250px"></canvas>
+</view>
